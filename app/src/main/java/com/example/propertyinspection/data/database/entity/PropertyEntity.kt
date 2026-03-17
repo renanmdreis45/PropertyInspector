@@ -1,5 +1,6 @@
 package com.example.propertyinspection.data.database.entity
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
@@ -13,5 +14,7 @@ data class PropertyEntity(
     val long: Double?,
     val type: String?,
     val totalRooms: Int,
-    val notes: String?
+    val notes: String?,
+    @ColumnInfo(name = "is_occupied")
+    val isOccupied: Boolean,
 )
