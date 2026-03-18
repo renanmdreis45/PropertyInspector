@@ -15,6 +15,9 @@ interface PropertyDao {
     @Insert
     fun insertProperty(property: PropertyEntity)
 
+    @Update
+    fun updateProperty(property: PropertyEntity)
+
     @Query("SELECT * FROM properties")
     fun getAllProperties(): List<PropertyEntity>
 
