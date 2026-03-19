@@ -13,6 +13,7 @@ data class PropertyEntity(
     val lat: Double?,
     val long: Double?,
     val type: String?,
+    @ColumnInfo(name = "total_rooms")
     val totalRooms: Int,
     val notes: String?,
     @ColumnInfo(name = "is_occupied")
